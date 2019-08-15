@@ -1,10 +1,11 @@
 <template>
     <div class="grid-container">
-        <h1>Kendo Flex Grid</h1>
-
         <el-row>
             <el-col :span="24">
-                A widget extension of Telerik Kendo Grid for VueJS with customized attributes or properties.
+                <m-blockquote>
+                    <h1>KendoFlexGrid</h1>
+                    <p>A widget extension of Telerik Kendo Grid for VueJS with customized attributes or properties.</p>
+                </m-blockquote>
             </el-col>
         </el-row>
 
@@ -80,7 +81,7 @@
 
         export default {
             components: {
-            kgrid,
+                kgrid,
             },
             data() {
             return {

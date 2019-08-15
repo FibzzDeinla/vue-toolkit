@@ -1,0 +1,26 @@
+.form-control {
+    
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    border: 1px solid #c0c0c0;
+}
+
+.k-list-container 
+{
+    padding: 0 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+
+    ul.k-list .k-item{
+        padding: 5px 15px !important;
+    }
+
+    &.k-popup .k-group-header,
+    &.k-popup .k-list .k-item > .k-group {
+        background: rgba(235, 235, 235, 0.54);
+        color: #717279;
+        border-bottom-left-radius: 1px;
+        font-weight: 500;
+    }
+}

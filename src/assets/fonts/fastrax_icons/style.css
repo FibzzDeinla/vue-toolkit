@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Fastrax-Icon';
+  src:  url('fonts/Fastrax-Icon.eot?g4ay24');
+  src:  url('fonts/Fastrax-Icon.eot?g4ay24#iefix') format('embedded-opentype'),
+    url('fonts/Fastrax-Icon.ttf?g4ay24') format('truetype'),
+    url('fonts/Fastrax-Icon.woff?g4ay24') format('woff'),
+    url('fonts/Fastrax-Icon.svg?g4ay24#Fastrax-Icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fastrax-"], [class*=" fastrax-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Fastrax-Icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fastrax-arrow-right:before {
+  content: "\e900";
+}
+.fastrax-arrow-left:before {
+  content: "\e901";
+}
+.fastrax-arrow-down:before {
+  content: "\e902";
+}
+.fastrax-arrow-up:before {
+  content: "\e903";
+}
+.fastrax-lock:before {
+  content: "\e904";
+}
+.fastrax-email:before {
+  content: "\e905";
+}
+.fastrax-database-setting:before {
+  content: "\e906";
+}
+.fastrax-database:before {
+  content: "\e908";
+}
+.fastrax-user-details:before {
+  content: "\e907";
+}
+.fastrax-user:before {
+  content: "\e909";
+}
+.fastrax-users:before {
+  content: "\e90a";
+}
+.fastrax-user-id:before {
+  content: "\e91c";
+}
+.fastrax-dashboard:before {
+  content: "\e90b";
+}
+.fastrax-asset:before {
+  content: "\e90c";
+}
+.fastrax-asset-hire:before {
+  content: "\e90d";
+}
+.fastrax-maintenance:before {
+  content: "\e90e";
+}
+.fastrax-stocks:before {
+  content: "\e90f";
+}
+.fastrax-sales:before {
+  content: "\e910";
+}
+.fastrax-server:before {
+  content: "\e911";
+}
+.fastrax-reports:before {
+  content: "\e912";
+}
+.fastrax-setting:before {
+  content: "\e913";
+}
+.fastrax-settings:before {
+  content: "\e914";
+}
+.fastrax-finance:before {
+  content: "\e915";
+}
+.fastrax-fastrax-trademark:before {
+  content: "\e916";
+}
+.fastrax-sign-out:before {
+  content: "\e917";
+}
+.fastrax-bell:before {
+  content: "\e918";
+}
+.fastrax-circular-action:before {
+  content: "\e919";
+}
+.fastrax-list:before {
+  content: "\e91a";
+}
+.fastrax-sidebar-toggle:before {
+  content: "\e91b";
+}

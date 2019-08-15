@@ -1,0 +1,21 @@
+h1.page_title {
+    margin: 0 0 15px 0;
+}
+
+.highcharts-column-series rect.highcharts-point {
+    stroke: #424242;
+    stroke-width: 0;
+}
+
+.highcharts-series.highcharts-column-series rect {
+    filter: url(#f1) !important;
+}
+
+.highcharts-series.highcharts-line-series,
+.highcharts-markers.highcharts-line-series {
+    filter: url(#f2) !important;
+}
+
+.dropdown-menu {
+    display: none;
+}

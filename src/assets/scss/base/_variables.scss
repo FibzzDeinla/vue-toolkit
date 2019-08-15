@@ -1,0 +1,66 @@
+//------------------------------
+// Helper variables
+//------------------------------
+
+$colorBrand: #454444;
+
+$max_space: 80;
+$step_count: 5;
+
+// Standard Flat Colors
+$colors: (
+  darkgrey: #a9a9a9,
+  red: #e64b3c,
+  orange: #e57d25,
+  green: #24ad61,
+  blue: #00aedb,
+  lightseagreen: #17bb9c,
+  crusta: #f37735,
+  tiffanyblue: #00aaad,
+  teal: #008080,
+  caribeangreen: #15c59f,
+  yelloworange: #fca13f,
+  easternblue: #248aaf,
+  kimberly: #666699,
+  fiord: #394e6d,
+  sanjuan: #34576a,
+  breakerbay: #61969c,
+  tapestry: #b66079,
+  carnation: #f9644e,
+  scorpion: #5e5c5d,
+  astral: #3a7ea5,
+  contessa: #ba7669,
+  salem: #169e49,
+  oslogray: #879596,
+  cosmic: #673653,
+  oceangreen: #3d9982,
+  rawsienna: #cb7546,
+  sanmarino: #4963ae,
+  rouge: #9c448e,
+  valencia: #d63b3f,
+  anzac: #dba739,
+  mulledwine: #5a4a6e,
+  orient: #015289,
+  slategray: #687e8c,
+  fountainblue: #56b0bb,
+  pictonblue: #38b7ea,
+  claret: #6e162c,
+  tuna: #3d3d45,
+  japonica: #d66b75,
+  envy: #89a396,
+  easternblue2: #23a39f,
+  porsche: #ed9d60,
+  brickred: #cc374b,
+  corn: #e3b702,
+  spicypink: #866e6e,
+  neptune: #7aa8b5,
+  horizon: #5d8aa8
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+
+  --button-rounded-radius: 24px;
+}

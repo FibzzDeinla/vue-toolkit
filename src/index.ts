@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import router from './router/index'
 import store from "./store";
 import IconComponent from "./components/Icon/index.vue";
+import MBlockQuote from "./components/MBlockQuote/index.vue";
 import Clipboard from "@/components/Clipboard/index.vue";
 import './helpers'
 import $ from 'jquery';
@@ -18,8 +19,6 @@ import "./assets/fonts/amsicons/style.css";
 import "node-waves/dist/waves.css";
 import "./assets/scss/style.scss";
 
-import "./assets/vendor/kendo/styles/kendo.common.min.css";
-import "./assets/vendor/kendo/styles/kendo.default.min.css";
 require("./assets/vendor/wavesjs/waves.js");
 require("./assets/vendor/kendo/js/kendo.all.min.js");
 require("./assets/vendor/kendo/extensions/KFlexGrid.js");
@@ -90,6 +89,7 @@ Vue.component('default-layout', Default)
 Vue.component(Button.name, Button);
 Vue.component(Select.name, Select);
 Vue.component("icon", IconComponent);
+Vue.component('m-blockquote', MBlockQuote);
 Vue.component('clipboard', Clipboard);
 
 new Vue({

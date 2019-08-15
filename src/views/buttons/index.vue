@@ -1,11 +1,12 @@
 <template>
   <div class="button-container">
-    <h1>Button</h1>
-
     <el-row>
-        <el-col :span="24">
-            A widget extension of Telerik Kendo Grid for VueJS with customized attributes or properties.
-        </el-col>
+      <el-col :span="24">
+        <m-blockquote>
+            <h1>MButton</h1>
+            <p>Simple buttons with applied custom styling and waves or ripple effect <em>node-waves</em>.</p>
+        </m-blockquote>
+      </el-col>
     </el-row>
     
     <h2>Attributes</h2>

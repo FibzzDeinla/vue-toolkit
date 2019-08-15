@@ -1,0 +1,101 @@
+// Padding
+// ---------------------------------
+@for $i from 0 through ceil($max_space/$step_count) { .p-#{$i*$step_count} { padding: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .pt-#{$i*$step_count} { padding-top: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .pb-#{$i*$step_count} { padding-bottom: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .pl-#{$i*$step_count} { padding-left: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .pr-#{$i*$step_count} { padding-right: #{($i*$step_count)}px !important }}
+
+// Margin
+// ---------------------------------
+@for $i from 0 through ceil($max_space/$step_count) { .m-#{$i*$step_count} { margin: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .mt-#{$i*$step_count} { margin-top: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .mb-#{$i*$step_count} { margin-bottom: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .ml-#{$i*$step_count} { margin-left: #{($i*$step_count)}px !important }}
+@for $i from 0 through ceil($max_space/$step_count) { .mr-#{$i*$step_count} { margin-right: #{($i*$step_count)}px !important }}
+
+
+.shadow-depth1 {
+    @include box-shadow(0 1px 3px rgba(0, 0, 0, .12)#{','} 0 1px 2px rgba(0, 0, 0, .24));
+}
+.shadow-depth2 {
+    @include box-shadow(0 3px 6px rgba(0, 0, 0, .16)#{','} 0 3px 6px rgba(0, 0, 0, .23));
+}
+.shadow-depth3 {
+    @include box-shadow(0 10px 20px rgba(0, 0, 0, .19)#{','} 0 6px 6px rgba(0, 0, 0, .23));
+}
+.shadow-depth4 {
+    @include box-shadow(0 14px 28px rgba(0, 0, 0, .25)#{','} 0 10px 10px rgba(0, 0, 0, .22));
+}
+.shadow-depth5 {
+    @include box-shadow(0 19px 38px rgba(0, 0, 0, .3)#{','} 0 15px 12px rgba(0, 0, 0, .22));
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}   
+.bold-text {
+    font-weight: 500;
+}
+.left-text {
+    text-align: left;
+}
+.right-text {
+    text-align: right;
+}
+.center-text {
+    text-align: center;
+}
+
+.styled[type="radio"]{
+    visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 0px 5px 12px 0;
+}
+
+    .styled[type="radio"]:disabled,
+    .styled[type="radio"].disabled {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    .styled[type="radio"]:checked:before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #3c8ace;
+        z-index: 1;
+        border-radius: 50%;
+        visibility: visible;
+        transform: translate(5px,5px);
+    }
+
+    .styled[type="radio"]:after{
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+        visibility: visible;
+        transform: scale(0.9);
+        border-radius: 50%;
+        border: 2px solid #629dd0;
+        box-shadow: 0 2px 15px -3px #89b5dc;
+    }
+
+.fxfadeInDown {
+    animation: fxFadeInDown 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.fxfadeInUp {
+    animation: fxFadeInUp 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

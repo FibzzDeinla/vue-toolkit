@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Radial Menu</h1>
-    <radial-menu :listMenu="lists"></radial-menu>
-
     <el-row>
       <el-col :span="24">
-        Radial Menu for floating buttons with menus on circular menu form. Take Note it only supports bottom left and bottom right position.
+        <m-blockquote>
+            <h1>Radial Menu</h1>
+            <p>Circular floating menu for navigation. Take Note it only supports <em>bottom-left</em> and <em>bottom-right</em> position.</p>
+        </m-blockquote>
       </el-col>
     </el-row>
 
@@ -67,6 +67,7 @@
     &lt;/script&gt;
     </clipboard>
     
+    <radial-menu :listMenu="lists"></radial-menu>
   </div>
 </template>
 

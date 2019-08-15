@@ -1,0 +1,1112 @@
+@font-face {
+  font-family: 'AMS-Font';
+  src:  url('fonts/AMS-Font.eot?1n23ax');
+  src:  url('fonts/AMS-Font.eot?1n23ax#iefix') format('embedded-opentype'),
+    url('fonts/AMS-Font.ttf?1n23ax') format('truetype'),
+    url('fonts/AMS-Font.woff?1n23ax') format('woff'),
+    url('fonts/AMS-Font.svg?1n23ax#AMS-Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="amsicon-"], [class*=" amsicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'AMS-Font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.amsicon-stocks:before {
+  content: "\ea33";
+}
+.amsicon-asset-management:before {
+  content: "\ea2d";
+}
+.amsicon-customer-survey:before {
+  content: "\ea2e";
+}
+.amsicon-home:before {
+  content: "\ea2f";
+}
+.amsicon-human-resource2:before {
+  content: "\ea30";
+}
+.amsicon-maintenance-management:before {
+  content: "\ea31";
+}
+.amsicon-training:before {
+  content: "\ea32";
+}
+.amsicon-operational-readiness:before {
+  content: "\e900";
+}
+.amsicon-workorder:before {
+  content: "\e901";
+}
+.amsicon-android-notifications-none:before {
+  content: "\e902";
+}
+.amsicon-android-notifications-off:before {
+  content: "\e903";
+}
+.amsicon-earth:before {
+  content: "\e904";
+}
+.amsicon-country:before {
+  content: "\e906";
+}
+.amsicon-eye:before {
+  content: "\e905";
+}
+.amsicon-eye-disabled:before {
+  content: "\e907";
+}
+.amsicon-laptop:before {
+  content: "\e908";
+}
+.amsicon-android-laptop:before {
+  content: "\e909";
+}
+.amsicon-android-home:before {
+  content: "\e90a";
+}
+.amsicon-appbarhomevariant:before {
+  content: "\e90b";
+}
+.amsicon-appbarplaces:before {
+  content: "\e90c";
+}
+.amsicon-edit:before {
+  content: "\e90d";
+}
+.amsicon-compose:before {
+  content: "\e90e";
+}
+.amsicon-android-stopwatch:before {
+  content: "\e90f";
+}
+.amsicon-android-alarm-clock:before {
+  content: "\e910";
+}
+.amsicon-clock:before {
+  content: "\e911";
+}
+.amsicon-speedometer:before {
+  content: "\e912";
+}
+.amsicon-appbartimerforward:before {
+  content: "\e913";
+}
+.amsicon-android-time:before {
+  content: "\e914";
+}
+.amsicon-file-release:before {
+  content: "\e915";
+}
+.amsicon-android-settings:before {
+  content: "\e916";
+}
+.amsicon-gears:before {
+  content: "\f085";
+}
+.amsicon-settings:before {
+  content: "\e917";
+}
+.amsicon-wrench:before {
+  content: "\f0ad";
+}
+.amsicon-asset-maintenance:before {
+  content: "\e918";
+}
+.amsicon-delete:before {
+  content: "\e919";
+}
+.amsicon-trash-b:before {
+  content: "\e91a";
+}
+.amsicon-sql-script:before {
+  content: "\e91b";
+}
+.amsicon-script-release:before {
+  content: "\e91c";
+}
+.amsicon-excel-block:before {
+  content: "\e91d";
+}
+.amsicon-script-release-block:before {
+  content: "\e91e";
+}
+.amsicon-appbarbookhardcoveropen:before {
+  content: "\e91f";
+}
+.amsicon-appbarbookhardcoveropenwriting:before {
+  content: "\e920";
+}
+.amsicon-report:before {
+  content: "\e921";
+}
+.amsicon-signatories:before {
+  content: "\e922";
+}
+.amsicon-appbarclipboardvariantedit:before {
+  content: "\e923";
+}
+.amsicon-appbarclipboardpaper:before {
+  content: "\e924";
+}
+.amsicon-appbarclipboardvariant:before {
+  content: "\e925";
+}
+.amsicon-appbarclipboardpapercheck:before {
+  content: "\e926";
+}
+.amsicon-appbarclipboardvarianttext:before {
+  content: "\e927";
+}
+.amsicon-item-list:before {
+  content: "\e928";
+}
+.amsicon-site-list:before {
+  content: "\e929";
+}
+.amsicon-signatories2:before {
+  content: "\e92a";
+}
+.amsicon-appbarcabinetfiles:before {
+  content: "\e92b";
+}
+.amsicon-appbarpageadd:before {
+  content: "\e92c";
+}
+.amsicon-appbarpageminus:before {
+  content: "\e92d";
+}
+.amsicon-appbarpagecheck:before {
+  content: "\e92e";
+}
+.amsicon-appbarpagecopy:before {
+  content: "\e92f";
+}
+.amsicon-appbarpagesearch:before {
+  content: "\e930";
+}
+.amsicon-appbarpageedit:before {
+  content: "\e931";
+}
+.amsicon-appbarpagedownload:before {
+  content: "\e932";
+}
+.amsicon-appbarpageupload:before {
+  content: "\e933";
+}
+.amsicon-appbarpagepdf:before {
+  content: "\e934";
+}
+.amsicon-appbarpageexcel:before {
+  content: "\e935";
+}
+.amsicon-file-xml:before {
+  content: "\e936";
+}
+.amsicon-appbarpagepowerpoint:before {
+  content: "\e937";
+}
+.amsicon-appbarpagefilegif:before {
+  content: "\e938";
+}
+.amsicon-appbarpagefilegiftag:before {
+  content: "\e939";
+}
+.amsicon-appbarpagearrow:before {
+  content: "\e93a";
+}
+.amsicon-appbarpagefilepdf:before {
+  content: "\e93b";
+}
+.amsicon-appbarpagefilepdftag:before {
+  content: "\e93c";
+}
+.amsicon-appbarpagejpg:before {
+  content: "\e93d";
+}
+.amsicon-appbarpagemultiple:before {
+  content: "\e93e";
+}
+.amsicon-appbarpagepng:before {
+  content: "\e93f";
+}
+.amsicon-appbarpageword:before {
+  content: "\e940";
+}
+.amsicon-appbarpagexml:before {
+  content: "\e941";
+}
+.amsicon-ios-printer:before {
+  content: "\e942";
+}
+.amsicon-android-print:before {
+  content: "\e943";
+}
+.amsicon-appbarprinterblank:before {
+  content: "\e944";
+}
+.amsicon-appbarprinter:before {
+  content: "\e945";
+}
+.amsicon-appbarprintertext:before {
+  content: "\e946";
+}
+.amsicon-appbartrain:before {
+  content: "\e947";
+}
+.amsicon-appbartransitbus:before {
+  content: "\e948";
+}
+.amsicon-android-bus:before {
+  content: "\e949";
+}
+.amsicon-vehicle-class:before {
+  content: "\e94a";
+}
+.amsicon-ownership:before {
+  content: "\e94b";
+}
+.amsicon-appbartransitcaraccident:before {
+  content: "\e94c";
+}
+.amsicon-android-car:before {
+  content: "\e94d";
+}
+.amsicon-appbartransitcar:before {
+  content: "\e94e";
+}
+.amsicon-appbartransitcongestion:before {
+  content: "\e94f";
+}
+.amsicon-vehicle-type:before {
+  content: "\e950";
+}
+.amsicon-vehicle-make:before {
+  content: "\e951";
+}
+.amsicon-appbarforklift:before {
+  content: "\e952";
+}
+.amsicon-appbarforkliftload:before {
+  content: "\e953";
+}
+.amsicon-android-boat:before {
+  content: "\e954";
+}
+.amsicon-vehicle-model:before {
+  content: "\e955";
+}
+.amsicon-non-vehicle:before {
+  content: "\e956";
+}
+.amsicon-android-train:before {
+  content: "\e957";
+}
+.amsicon-android-subway:before {
+  content: "\e958";
+}
+.amsicon-appbarpeoplemagnify:before {
+  content: "\e959";
+}
+.amsicon-android-person-add:before {
+  content: "\e95a";
+}
+.amsicon-appbaruser:before {
+  content: "\e95b";
+}
+.amsicon-appbaruseradd:before {
+  content: "\e95c";
+}
+.amsicon-appbaruserdelete:before {
+  content: "\e95d";
+}
+.amsicon-appbaruserminus:before {
+  content: "\e95e";
+}
+.amsicon-android-contact:before {
+  content: "\e95f";
+}
+.amsicon-android-contacts:before {
+  content: "\e960";
+}
+.amsicon-android-person:before {
+  content: "\e961";
+}
+.amsicon-android-people:before {
+  content: "\e962";
+}
+.amsicon-customer-support:before {
+  content: "\e963";
+}
+.amsicon-customer-inquiry:before {
+  content: "\e964";
+}
+.amsicon-user-key:before {
+  content: "\e965";
+}
+.amsicon-groups:before {
+  content: "\e966";
+}
+.amsicon-appbarpeoplemultiple:before {
+  content: "\e967";
+}
+.amsicon-ios-people:before {
+  content: "\e968";
+}
+.amsicon-position:before {
+  content: "\e969";
+}
+.amsicon-department:before {
+  content: "\e96a";
+}
+.amsicon-supplier-group:before {
+  content: "\e96b";
+}
+.amsicon-appbarpeoplemultiplemagnify:before {
+  content: "\e96c";
+}
+.amsicon-appbarpapercliprotated:before {
+  content: "\e96d";
+}
+.amsicon-appbarpaperclip:before {
+  content: "\e96e";
+}
+.amsicon-ios-telephone:before {
+  content: "\e96f";
+}
+.amsicon-appbarphone:before {
+  content: "\e970";
+}
+.amsicon-ios-email:before {
+  content: "\e971";
+}
+.amsicon-android-drafts:before {
+  content: "\e972";
+}
+.amsicon-unlocked:before {
+  content: "\e973";
+}
+.amsicon-locked:before {
+  content: "\e974";
+}
+.amsicon-power-off:before {
+  content: "\f011";
+}
+.amsicon-power:before {
+  content: "\e975";
+}
+.amsicon-check:before {
+  content: "\f00c";
+}
+.amsicon-android-done:before {
+  content: "\e976";
+}
+.amsicon-times:before {
+  content: "\f00d";
+}
+.amsicon-android-close:before {
+  content: "\e977";
+}
+.amsicon-appbartransithazard:before {
+  content: "\e978";
+}
+.amsicon-appbarwarning:before {
+  content: "\e979";
+}
+.amsicon-help2:before {
+  content: "\e97a";
+}
+.amsicon-help-circled:before {
+  content: "\e97b";
+}
+.amsicon-information-circled:before {
+  content: "\e97c";
+}
+.amsicon-appbarwarningcircle:before {
+  content: "\e97d";
+}
+.amsicon-appbarpin:before {
+  content: "\e97e";
+}
+.amsicon-pie-graph:before {
+  content: "\e97f";
+}
+.amsicon-connection-bars:before {
+  content: "\e980";
+}
+.amsicon-stats-bars:before {
+  content: "\e981";
+}
+.amsicon-tags:before {
+  content: "\f02c";
+}
+.amsicon-tag:before {
+  content: "\f02b";
+}
+.amsicon-brands:before {
+  content: "\e982";
+}
+.amsicon-appbarfolderopen:before {
+  content: "\e983";
+}
+.amsicon-appbarfolder:before {
+  content: "\e984";
+}
+.amsicon-android-chat:before {
+  content: "\e985";
+}
+.amsicon-chatboxes:before {
+  content: "\e986";
+}
+.amsicon-calendar:before {
+  content: "\f073";
+}
+.amsicon-month-end:before {
+  content: "\e987";
+}
+.amsicon-appbarcalendarplus:before {
+  content: "\e988";
+}
+.amsicon-appbarcalendarmonth:before {
+  content: "\e989";
+}
+.amsicon-appbarcalendardollar:before {
+  content: "\e98a";
+}
+.amsicon-appbarcalendarrange:before {
+  content: "\e98b";
+}
+.amsicon-appbarcalendarweek:before {
+  content: "\e98c";
+}
+.amsicon-appbarcalendaryear:before {
+  content: "\e98d";
+}
+.amsicon-appbarcalendar:before {
+  content: "\e98e";
+}
+.amsicon-appbarcalendarday:before {
+  content: "\e98f";
+}
+.amsicon-images2:before {
+  content: "\e990";
+}
+.amsicon-image2:before {
+  content: "\e991";
+}
+.amsicon-search:before {
+  content: "\f002";
+}
+.amsicon-search-minus:before {
+  content: "\f010";
+}
+.amsicon-search-plus:before {
+  content: "\f00e";
+}
+.amsicon-search2:before {
+  content: "\e992";
+}
+.amsicon-refresh:before {
+  content: "\e993";
+}
+.amsicon-loop:before {
+  content: "\e994";
+}
+.amsicon-log-out:before {
+  content: "\e995";
+}
+.amsicon-log-in:before {
+  content: "\e996";
+}
+.amsicon-android-exit:before {
+  content: "\e997";
+}
+.amsicon-appbarqr:before {
+  content: "\e998";
+}
+.amsicon-appbarcabinetfilesvariant:before {
+  content: "\e999";
+}
+.amsicon-appbarboxlayered:before {
+  content: "\e99a";
+}
+.amsicon-appbarresource:before {
+  content: "\e99b";
+}
+.amsicon-appbarbookperspective:before {
+  content: "\e99c";
+}
+.amsicon-appbarbook:before {
+  content: "\e99d";
+}
+.amsicon-db-execute:before {
+  content: "\e99e";
+}
+.amsicon-cash-on-hand:before {
+  content: "\e99f";
+}
+.amsicon-appbarbilling:before {
+  content: "\e9a0";
+}
+.amsicon-cash:before {
+  content: "\e9a1";
+}
+.amsicon-currencies:before {
+  content: "\e9a2";
+}
+.amsicon-appbarhourglass:before {
+  content: "\e9a3";
+}
+.amsicon-supplier:before {
+  content: "\e9a4";
+}
+.amsicon-health-and-safety:before {
+  content: "\e9a5";
+}
+.amsicon-medkit:before {
+  content: "\e9a6";
+}
+.amsicon-appbarplanerotated45:before {
+  content: "\e9a7";
+}
+.amsicon-appbarinfinite:before {
+  content: "\e9a8";
+}
+.amsicon-at:before {
+  content: "\e9a9";
+}
+.amsicon-android-hand:before {
+  content: "\e9aa";
+}
+.amsicon-android-folder:before {
+  content: "\e9ab";
+}
+.amsicon-android-folder-open:before {
+  content: "\e9ac";
+}
+.amsicon-android-list:before {
+  content: "\e9ad";
+}
+.amsicon-android-phone-landscape:before {
+  content: "\e9ae";
+}
+.amsicon-android-phone-portrait:before {
+  content: "\e9af";
+}
+.amsicon-android-share-alt:before {
+  content: "\e9b0";
+}
+.amsicon-bluetooth:before {
+  content: "\e9b1";
+}
+.amsicon-calculator:before {
+  content: "\e9b2";
+}
+.amsicon-android-cloud-done:before {
+  content: "\e9b3";
+}
+.amsicon-android-download:before {
+  content: "\e9b4";
+}
+.amsicon-android-upload:before {
+  content: "\e9b5";
+}
+.amsicon-archive:before {
+  content: "\e9b6";
+}
+.amsicon-arrow-move:before {
+  content: "\e9b7";
+}
+.amsicon-arrow-expand:before {
+  content: "\e9b8";
+}
+.amsicon-arrow-shrink:before {
+  content: "\e9b9";
+}
+.amsicon-android-apps:before {
+  content: "\e9ba";
+}
+.amsicon-android-menu:before {
+  content: "\e9bb";
+}
+.amsicon-android-more-vertical:before {
+  content: "\e9bc";
+}
+.amsicon-android-more-horizontal:before {
+  content: "\e9bd";
+}
+.amsicon-more:before {
+  content: "\e9be";
+}
+.amsicon-load-a:before {
+  content: "\e9bf";
+}
+.amsicon-android-sync:before {
+  content: "\e9c0";
+}
+.amsicon-android-refresh:before {
+  content: "\e9c1";
+}
+.amsicon-checkmark:before {
+  content: "\e9c2";
+}
+.amsicon-chevron-down:before {
+  content: "\e9c3";
+}
+.amsicon-chevron-left:before {
+  content: "\e9c4";
+}
+.amsicon-chevron-right:before {
+  content: "\e9c5";
+}
+.amsicon-chevron-up:before {
+  content: "\e9c6";
+}
+.amsicon-edit2:before {
+  content: "\e9c7";
+}
+.amsicon-erlenmeyer-flask:before {
+  content: "\e9c8";
+}
+.amsicon-funnel:before {
+  content: "\e9c9";
+}
+.amsicon-android-funnel:before {
+  content: "\e9ca";
+}
+.amsicon-android-arrow-dropleft:before {
+  content: "\e9cb";
+}
+.amsicon-android-arrow-dropright:before {
+  content: "\e9cc";
+}
+.amsicon-android-arrow-dropdown:before {
+  content: "\e9cd";
+}
+.amsicon-android-arrow-dropup:before {
+  content: "\e9ce";
+}
+.amsicon-ios-arrow-back:before {
+  content: "\e9cf";
+}
+.amsicon-ios-arrow-down:before {
+  content: "\e9d0";
+}
+.amsicon-ios-arrow-forward:before {
+  content: "\e9d1";
+}
+.amsicon-ios-arrow-left:before {
+  content: "\e9d2";
+}
+.amsicon-ios-arrow-right:before {
+  content: "\e9d3";
+}
+.amsicon-reply-all:before {
+  content: "\e9d4";
+}
+.amsicon-ios-undo:before {
+  content: "\e9d5";
+}
+.amsicon-android-share:before {
+  content: "\e9d6";
+}
+.amsicon-paper-airplane:before {
+  content: "\e9d7";
+}
+.amsicon-ios-folder:before {
+  content: "\e9d8";
+}
+.amsicon-ios-lightbulb:before {
+  content: "\e9d9";
+}
+.amsicon-ios-list:before {
+  content: "\e9da";
+}
+.amsicon-ios-paper:before {
+  content: "\e9db";
+}
+.amsicon-android-attach:before {
+  content: "\e9dc";
+}
+.amsicon-link2:before {
+  content: "\e9dd";
+}
+.amsicon-scissors:before {
+  content: "\e9de";
+}
+.amsicon-quote:before {
+  content: "\e9df";
+}
+.amsicon-ribbon-a:before {
+  content: "\e9e0";
+}
+.amsicon-ribbon-b:before {
+  content: "\e9e1";
+}
+.amsicon-share:before {
+  content: "\e9e2";
+}
+.amsicon-social-apple:before {
+  content: "\e9e3";
+}
+.amsicon-social-apple-outline:before {
+  content: "\e9e4";
+}
+.amsicon-social-facebook:before {
+  content: "\e9e5";
+}
+.amsicon-social-facebook-outline:before {
+  content: "\e9e6";
+}
+.amsicon-social-googleplus:before {
+  content: "\e9e7";
+}
+.amsicon-camera:before {
+  content: "\e9e8";
+}
+.amsicon-social-instagram:before {
+  content: "\e9e9";
+}
+.amsicon-social-instagram-outline:before {
+  content: "\e9ea";
+}
+.amsicon-social-linkedin:before {
+  content: "\e9eb";
+}
+.amsicon-social-linkedin-outline:before {
+  content: "\e9ec";
+}
+.amsicon-social-pinterest:before {
+  content: "\e9ed";
+}
+.amsicon-social-pinterest-outline:before {
+  content: "\e9ee";
+}
+.amsicon-social-rss:before {
+  content: "\e9ef";
+}
+.amsicon-wifi:before {
+  content: "\e9f0";
+}
+.amsicon-social-skype:before {
+  content: "\e9f1";
+}
+.amsicon-social-skype-outline:before {
+  content: "\e9f2";
+}
+.amsicon-social-tumblr:before {
+  content: "\e9f3";
+}
+.amsicon-social-tumblr-outline:before {
+  content: "\e9f4";
+}
+.amsicon-social-twitter:before {
+  content: "\e9f5";
+}
+.amsicon-social-twitter-outline:before {
+  content: "\e9f6";
+}
+.amsicon-social-usd:before {
+  content: "\e9f7";
+}
+.amsicon-social-vimeo:before {
+  content: "\e9f8";
+}
+.amsicon-social-vimeo-outline:before {
+  content: "\e9f9";
+}
+.amsicon-social-whatsapp:before {
+  content: "\e9fa";
+}
+.amsicon-social-whatsapp-outline:before {
+  content: "\e9fb";
+}
+.amsicon-social-youtube:before {
+  content: "\e9fc";
+}
+.amsicon-social-youtube-outline:before {
+  content: "\e9fd";
+}
+.amsicon-thumbsdown:before {
+  content: "\e9fe";
+}
+.amsicon-thumbsup:before {
+  content: "\e9ff";
+}
+.amsicon-man:before {
+  content: "\ea00";
+}
+.amsicon-woman:before {
+  content: "\ea01";
+}
+.amsicon-item-name-group:before {
+  content: "\ea02";
+}
+.amsicon-category:before {
+  content: "\ea03";
+}
+.amsicon-waterdrop:before {
+  content: "\ea04";
+}
+.amsicon-color:before {
+  content: "\ea05";
+}
+.amsicon-models:before {
+  content: "\ea06";
+}
+.amsicon-components:before {
+  content: "\ea07";
+}
+.amsicon-size:before {
+  content: "\ea08";
+}
+.amsicon-android-film:before {
+  content: "\ea09";
+}
+.amsicon-unit-measurement:before {
+  content: "\ea0a";
+}
+.amsicon-wineglass:before {
+  content: "\ea0b";
+}
+.amsicon-site-location:before {
+  content: "\ea0c";
+}
+.amsicon-ion-gear-a:before {
+  content: "\f13d";
+}
+.amsicon-app-setting:before {
+  content: "\ea0d";
+}
+.amsicon-cogs:before {
+  content: "\ea0e";
+}
+.amsicon-equipment-maintenance:before {
+  content: "\eb48";
+}
+.amsicon-toolbox:before {
+  content: "\ea0f";
+}
+.amsicon-ion-clipboard:before {
+  content: "\f127";
+}
+.amsicon-ion-model-s:before {
+  content: "\f2c1";
+}
+.amsicon-ion-android-social:before {
+  content: "\f2fa";
+}
+.amsicon-user-authentication:before {
+  content: "\ea10";
+}
+.amsicon-user-info:before {
+  content: "\ea11";
+}
+.amsicon-ion-android-upload:before {
+  content: "\f2dd";
+}
+.amsicon-ion-android-download:before {
+  content: "\f2de";
+}
+.amsicon-ion-android-mail:before {
+  content: "\f2eb";
+}
+.amsicon-ion-alert-circled:before {
+  content: "\f100";
+}
+.amsicon-ion-help-circled:before {
+  content: "\f142";
+}
+.amsicon-ion-ios7-bell:before {
+  content: "\f159";
+}
+.amsicon-ion-flag:before {
+  content: "\f279";
+}
+.amsicon-ion-android-folder:before {
+  content: "\f2e0";
+}
+.amsicon-ion-folder:before {
+  content: "\f139";
+}
+.amsicon-ion-calendar:before {
+  content: "\f117";
+}
+.amsicon-month-summary:before {
+  content: "\ea12";
+}
+.amsicon-ion-log-in:before {
+  content: "\f29e";
+}
+.amsicon-ion-log-out:before {
+  content: "\f29f";
+}
+.amsicon-magnify-minus:before {
+  content: "\ea13";
+}
+.amsicon-magnify-plus:before {
+  content: "\ea14";
+}
+.amsicon-cabinet:before {
+  content: "\ea15";
+}
+.amsicon-ion-social-buffer:before {
+  content: "\f229";
+}
+.amsicon-journal:before {
+  content: "\ea16";
+}
+.amsicon-help:before {
+  content: "\ea17";
+}
+.amsicon-db-upload:before {
+  content: "\ea18";
+}
+.amsicon-db-download:before {
+  content: "\ea19";
+}
+.amsicon-database:before {
+  content: "\ea1a";
+}
+.amsicon-coins2:before {
+  content: "\ea1b";
+}
+.amsicon-handshake:before {
+  content: "\ea1c";
+}
+.amsicon-money:before {
+  content: "\ea1d";
+}
+.amsicon-ion-card:before {
+  content: "\f119";
+}
+.amsicon-meter:before {
+  content: "\ea1e";
+}
+.amsicon-bin:before {
+  content: "\ea1f";
+}
+.amsicon-file-pdf:before {
+  content: "\e65f";
+}
+.amsicon-file-excel:before {
+  content: "\e662";
+}
+.amsicon-libreoffice:before {
+  content: "\e65e";
+}
+.amsicon-file-openoffice:before {
+  content: "\e660";
+}
+.amsicon-file-powerpoint:before {
+  content: "\e663";
+}
+.amsicon-file-word:before {
+  content: "\e661";
+}
+.amsicon-cars-service:before {
+  content: "\e61e";
+}
+.amsicon-fleet:before {
+  content: "\e745";
+}
+.amsicon-car-check:before {
+  content: "\e631";
+}
+.amsicon-truck:before {
+  content: "\e640";
+}
+.amsicon-human-resource:before {
+  content: "\ea20";
+}
+.amsicon-link:before {
+  content: "\e648";
+}
+.amsicon-key2:before {
+  content: "\ea21";
+}
+.amsicon-lock:before {
+  content: "\e62e";
+}
+.amsicon-profile:before {
+  content: "\e633";
+}
+.amsicon-lock2:before {
+  content: "\e636";
+}
+.amsicon-info:before {
+  content: "\e64d";
+}
+.amsicon-location:before {
+  content: "\e616";
+}
+.amsicon-location22:before {
+  content: "\e617";
+}
+.amsicon-stats:before {
+  content: "\e635";
+}
+.amsicon-stock-graph:before {
+  content: "\ea22";
+}
+.amsicon-bars2:before {
+  content: "\e637";
+}
+.amsicon-bars:before {
+  content: "\e638";
+}
+.amsicon-calendar2:before {
+  content: "\e620";
+}
+.amsicon-download3:before {
+  content: "\ea23";
+}
+.amsicon-upload3:before {
+  content: "\ea24";
+}
+.amsicon-image:before {
+  content: "\e600";
+}
+.amsicon-images:before {
+  content: "\e601";
+}
+.amsicon-barcode:before {
+  content: "\ea25";
+}
+.amsicon-qrcode:before {
+  content: "\ea26";
+}
+.amsicon-ticket:before {
+  content: "\ea27";
+}
+.amsicon-address-book:before {
+  content: "\e614";
+}
+.amsicon-asset-register:before {
+  content: "\ea28";
+}
+.amsicon-finance-management:before {
+  content: "\ea29";
+}
+.amsicon-stock-inventory:before {
+  content: "\ea2a";
+}
+.amsicon-briefcase:before {
+  content: "\ea2b";
+}
+.amsicon-cart:before {
+  content: "\ea2c";
+}

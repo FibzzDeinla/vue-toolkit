@@ -1,0 +1,25 @@
+.btn-rounded {
+    border-radius: var(--button-rounded-radius);
+}
+
+.btn-square {
+    border-radius: 3px;
+}
+
+@each $name, $color in $colors {
+	.btn-#{$name}:not(.inverted)
+	{
+        @include button($color, white);
+    }
+	.btn-#{$name}.inverted
+	{
+        @include button($color, white, true);
+	}
+}
+
+@each $name, $color in $colors {
+	.bg-#{$name}
+	{
+        background-color: #{$color};
+    }
+}

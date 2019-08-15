@@ -1,0 +1,124 @@
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content; 
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    } 
+  }
+  
+  @mixin transition($propval) {
+    -webkit-transition: $propval;
+       -moz-transition: $propval;
+        -ms-transition: $propval;
+         -o-transition: $propval;
+            transition: $propval;
+  }
+  
+  @mixin animation($propval) {
+      -webkit-animation: $propval;
+      -moz-animation: $propval;
+      -ms-animation: $propval;
+      -o-animation: $propval;
+      animation: $propval;
+  }
+  
+  @mixin border-radius($radius: 5.5em) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+            border-radius: $radius;
+  }
+  
+  @mixin box-shadow($propval) {
+    -webkit-box-shadow: $propval;
+       -moz-box-shadow: $propval;
+        -ms-box-shadow: $propval;
+       -o-box-shadow: $propval;
+            box-shadow: $propval;
+  }
+
+  @mixin custom-box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $spread $color;
+      -moz-box-shadow:inset $top $left $blur $spread $color;
+      box-shadow:inset $top $left $blur $spread $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $spread $color;
+      -moz-box-shadow: $top $left $blur $spread $color;
+      box-shadow: $top $left $blur $spread $color;
+    }
+  }
+  
+  @mixin transform($propval) {
+    -webkit-transform: $propval;
+    -moz-transform: $propval;
+    -ms-transform: $propval;
+    -o-transform: $propval;
+    transform: $propval;
+  }
+
+  @mixin gradient($from, $to) {
+    background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background: -moz-linear-gradient(top,  $from, $to);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+  } 
+
+  @mixin button($color: $red, $text_color: $white, $inverted: false) {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% 'Work Sans', 'Roboto', sans-serif;;
+    padding: .80em 2em .80em;
+    font-weight: normal;
+    border: none;
+    @if $inverted {  
+      background: $text_color;
+      color: $color !important;
+      border: thin solid $color !important;
+    } @else {
+      background: $color;
+      color: $text_color !important;    
+    }
+    @include transition(all .5s cubic-bezier(0.165, 0.84, 0.44, 1));
+    // @include gradient(saturate($color, 15%), darken($color, 15%));
+    @include custom-box-shadow(0, 8px, 15px, -6px, lighten($color, 20%));
+    
+    &:hover {
+      text-decoration: none;
+      @if $inverted == false {  
+        background: saturate($color, 10%);
+        // @include gradient(saturate($color, 5%), darken($color, 5%));
+      }
+    }
+  
+    &:active {
+      position: relative;
+      top: 1px;
+      @if $inverted == false {  
+        color: saturate($color, 15%);
+        // @include gradient(saturate($color, 15%), lighten($color, 15%));
+      }
+    }
+
+    &:focus, &:hover, &:active {
+      @include custom-box-shadow(0, 8px, 21px, -5px, lighten($color, 5%));
+    }
+  }
+
+  @mixin user-select($propval) {
+    -webkit-transform: $propval;
+    -moz-transform: $propval;
+    -ms-transform: $propval;
+    -o-transform: $propval;
+    transform: $propval;
+}

@@ -1,0 +1,75 @@
+/**************************************************
+//   Chart Card Styles
+*************************************************/
+
+.chartcard-body .view-chart-detail {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.h-action-buttons {
+    right: 15px;
+    top: 15px;
+    position: absolute;
+}
+
+.chartcard-heading.default .h-action-buttons>a,
+.chartcard-heading.default a.export-chart-btn {
+    color: #fff !important;
+}
+
+.chartcard-heading.plain .h-action-buttons>a,
+.chartcard-heading.plain a.export-chart-btn {
+    color: #949494 !important;
+}
+
+.export-chart-container,
+.h-action-buttons>a {
+    vertical-align: top;
+    float: left;
+    margin-left: 12px;
+    position: relative;
+}
+
+.h-action-buttons>a,
+.export-chart-btn,
+.export-chart-btn:active,
+.export-chart-btn:hover {
+    font-size: 16px;
+    text-decoration: none !important;
+}
+
+.h-action-buttons>a:focus:after,
+.export-chart-container.open>.export-chart-btn:after {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.9);
+}
+
+.h-action-buttons>a>i,
+a.export-chart-btn>i {
+    position: relative;
+    z-index: 1;
+}
+
+
+.h-action-buttons>a:after,
+a.export-chart-btn:after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    top: -4px;
+    border-radius: 50%;
+    background: #dedede;
+    opacity: 0.25;
+    left: -7px;
+}

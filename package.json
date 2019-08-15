@@ -12,7 +12,7 @@
     "build-me": "webpack -d --mode development && webpack-dev-server --config webpack.config.js",
     "build-prod": "webpack -p --mode production",
     "test:unit": "jest --clearCache && jest --config test/jest.conf.js",
-    "build-deploy": "build-prod && vue-cli-ghpages"
+    "build-deploy": "webpack -p --mode production && vue-cli-ghpages"
   },
   "dependencies": {
     "babel-core": "^7.0.0-bridge.0",
