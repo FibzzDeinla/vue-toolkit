@@ -93,8 +93,8 @@ Vue.component('m-blockquote', MBlockQuote);
 Vue.component('clipboard', Clipboard);
 
 new Vue({
-  el: '#app',
+  // el: '#app',
   store: store,
   router: router,
   render: h => h(App),
-});
+}).$mount('#app');
