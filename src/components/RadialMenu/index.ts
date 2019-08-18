@@ -17,9 +17,6 @@ export default Vue.extend({
     },
     created() {},
     methods: {
-      informMe() {
-        $('body').addClass("radial-open");
-      }
     },
     mounted() {
       var that = this;
@@ -27,7 +24,12 @@ export default Vue.extend({
   
       // DOM is not updated yet
       this.$nextTick(() => {
-  
+        _el.children[0].classList.add(`radial-${this.position}-aligned`)
+
+        _el.children[0].addEventListener("click", function(){
+          document.body.classList.add("radial-open")
+        })
+
         var size = 300;
         var width = size,
         height = size,                                                                                                                                                                                                                                                                                                                                                                                                                         
@@ -51,6 +53,7 @@ export default Vue.extend({
         var svg = d3.select('body').append("svg")
           .attr("width", width)
           .attr("height", height)
+          .attr('class', `radial-${this.position}-aligned`)
           .append("g")
           .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
     
@@ -128,7 +131,7 @@ export default Vue.extend({
           var innerCenterGrp = svg.append("g")
               .attr("class", "inner__center__group")
               .on('click', function(){
-                $('body').removeClass("radial-open");
+                document.body.classList.remove("radial-open")
               })
     
           innerCenterGrp.append("circle")

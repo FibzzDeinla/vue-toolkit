@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="javascript:void(0)" @click="informMe" class="ellipsis">
+    <a href="javascript:void(0)" class="ellipsis">
         <i class="fastrax-circular-action"></i>
     </a>
   </div>
@@ -32,32 +32,71 @@
         fill: #333333;
     }
 
-    svg {
-      position: absolute;
-      bottom: 10%;
-      right: 5%;
+    body svg {
       z-index: 2;
+      position: absolute;
+
+      &.radial-bottom-right-aligned
+      {
+        bottom: 10%;
+        right: 5%;
+      }
+
+      &.radial-bottom-left-aligned
+      {
+        bottom: 10%;
+        left: 5%;
+      }
     }
 
-    .ellipsis {
-        position: absolute;
+    body .ellipsis {
+      position: absolute;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      background: #ffffff;
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.44);
+      opacity: 1;
+      
+      &.radial-bottom-right-aligned
+      {
         bottom: 20px;
         right: 20px;
-        z-index: 1;
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        background: #ffffff;
-        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.44);
         -webkit-transition: right 0.3s ease-in-out, bottom 0.3s ease-in-out, opacity .35s ease-in-out;
         transition: right 0.3s ease-in-out, bottom 0.3s ease-in-out, opacity .35s ease-in-out;
-        opacity: 1;
+      }
+
+      &.radial-bottom-left-aligned
+      {
+        bottom: 20px;
+        left: 20px;
+        -webkit-transition: left 0.3s ease-in-out, bottom 0.3s ease-in-out, opacity .35s ease-in-out;
+        transition: left 0.3s ease-in-out, bottom 0.3s ease-in-out, opacity .35s ease-in-out;
+      }
     }
 
-    body.radial-open .ellipsis {
-        bottom: 23%;
-        right: 11%;
-        opacity: 0;
+    body.radial-open {
+      svg {
+        transform: scale(1);
+        transition: transform .12s ease .2s;
+      }
+
+      .ellipsis {
+          &.radial-bottom-right-aligned
+          {
+            bottom: 23%;
+            right: 11%;
+            opacity: 0;
+          }
+
+          &.radial-bottom-left-aligned
+          {
+            bottom: 23%;
+            left: 11%;
+            opacity: 0;
+          }
+      }
     }
 
     body:not(.radial-open) .ellipsis {
@@ -69,15 +108,9 @@
       transition: transform .3s ease;
     }
 
-    body.radial-open svg {
-      transform: scale(1);
-      transition: transform .12s ease .2s;
-    }
-
     .ellipsis:active,
     .ellipsis:hover {
       box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.44);
-      // background: #2e8ece;
     }
 
     .ellipsis i {
