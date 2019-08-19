@@ -14,7 +14,8 @@ export default Vue.extend({
             type: [Object, Array]
         },
         optionLabel: {
-            type: Object
+            type: [Object, String],
+            default:() => "Select here..."
         }
     },
     mounted() {

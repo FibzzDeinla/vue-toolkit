@@ -3,7 +3,8 @@
         <div class="input-group-append currency-label">
             <span class="input-group-text">{{ currencyCode }}</span>
         </div>
-        <input type="text" readonly v-bind:value="result.text" class="form-control currencyinput-control" />
+        <input v-if="readonly==true" type="text" readonly v-bind:value="result.text" class="form-control currencyinput-control" />
+        <input v-else type="text" v-bind:value="result.text" class="form-control currencyinput-control" ref="input" />
     </div>
 </template>
 
@@ -11,7 +12,7 @@
 </script>
 
 <style scoped lang="scss">
-    @import "@/scss/base/_mixins.scss";
+    @import "@/assets/scss/base/_mixins.scss";
 
     .currencyinput {
         position: relative;

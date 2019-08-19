@@ -8,6 +8,7 @@ import Grids from '../views/grids/index.vue'
 import RadialMenu from '../views/radialMenu/index.vue'
 import KendoDropList from '../views/kendodroplist/index.vue'
 import Switchery from '../views/switchery/index.vue'
+import CurrencyInput from '../views/currencyinput/index.vue'
 
 Vue.use(Router)
 
@@ -68,6 +69,15 @@ let router = new Router({
           icon: 'home'
       }
     },
+    {
+      path: '/currencyinput',
+      name: 'CurrencyInput',
+      component: CurrencyInput,
+      meta: {
+          display: 'Currency Input',
+          icon: 'home'
+      }
+    }
   ]
 })
 

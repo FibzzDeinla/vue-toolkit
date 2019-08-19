@@ -99,15 +99,15 @@ export default {
           attr: "dataSource",
           desc: "list of object values with dataValue and dataText field which will be displayed",
           type: "Object",
-          values: "true, false",
-          defaultvalue: "false"
+          values: "-",
+          defaultvalue: "-"
         },
         {
           attr: "optionLabel",
           desc: "Text that will be displayed like a placeholder",
-          type: "String",
-          values: "normal, small",
-          defaultvalue: "normal"
+          type: "String or Object",
+          values: "-",
+          defaultvalue: "Select here..."
         }
       ],
       tableDataEvnts: [

@@ -118,7 +118,7 @@ export default {
         {
           attr: "onClick",
           desc: "Triggers event once radial item is clicked",
-          parameter: "-"
+          parameter: "data (Selected object)"
         }
       ],
     };

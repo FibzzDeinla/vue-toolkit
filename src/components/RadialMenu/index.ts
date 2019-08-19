@@ -21,14 +21,25 @@ export default Vue.extend({
     mounted() {
       var that = this;
       var _el = this.$el;
-  
+      
       // DOM is not updated yet
       this.$nextTick(() => {
-        _el.children[0].classList.add(`radial-${this.position}-aligned`)
+        _el.children[0].classList
+          .add('radial-menu-nav' ,`radial-${this.position}-aligned`)
 
+        // Add click event listener for radial menu toggle button
         _el.children[0].addEventListener("click", function(){
           document.body.classList.add("radial-open")
         })
+
+        // Hides once click outside the element 
+        $(document).on('click', function(event) {
+          event.stopImmediatePropagation();
+
+          if (!$(event.target).closest('.radial-menu-nav').length && !$(event.target).closest('.radial-menu-svg').length) {
+            document.body.classList.remove("radial-open")
+          }
+        });
 
         var size = 300;
         var width = size,
@@ -53,7 +64,7 @@ export default Vue.extend({
         var svg = d3.select('body').append("svg")
           .attr("width", width)
           .attr("height", height)
-          .attr('class', `radial-${this.position}-aligned`)
+          .attr('class', `radial-menu-svg radial-${this.position}-aligned`)
           .append("g")
           .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
     
